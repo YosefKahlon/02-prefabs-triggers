@@ -7,6 +7,15 @@ TagManager:
   - Enemy
   - Laser
   - Wall
+  - nornal
+  - hard
+  - easy
+  - Shield
+  - Edge
+  - Right Edge
+  - Left Edge
+  - Top Edge
+  - Down Edge
   layers:
   - Default
   - TransparentFX

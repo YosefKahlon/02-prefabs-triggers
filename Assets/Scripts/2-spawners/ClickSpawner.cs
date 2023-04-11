@@ -26,7 +26,7 @@ public class ClickSpawner: MonoBehaviour {
         // Step 1: spawn the new object.
         Vector3 positionOfSpawnedObject = transform.position;  // span at the containing object position.
         Quaternion rotationOfSpawnedObject = Quaternion.identity;  // no rotation.
-        GameObject newObject = Instantiate(prefabToSpawn, positionOfSpawnedObject, rotationOfSpawnedObject);
+        GameObject newObject = Instantiate(prefabToSpawn, positionOfSpawnedObject, rotationOfSpawnedObject);//create new object  
 
         // Step 2: modify the velocity of the new object.
         Mover newObjectMover = newObject.GetComponent<Mover>();
