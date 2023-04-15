@@ -16,6 +16,7 @@ TagManager:
   - Left Edge
   - Top Edge
   - Down Edge
+  - +1
   layers:
   - Default
   - TransparentFX
