@@ -424,8 +424,8 @@ GameObject:
   - component: {fileID: 600354082}
   - component: {fileID: 600354083}
   m_Layer: 0
-  m_Name: ' down side '
-  m_TagString: Down Edge
+  m_Name: ' bottom side '
+  m_TagString: Bottom Edge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

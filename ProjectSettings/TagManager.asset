@@ -17,6 +17,7 @@ TagManager:
   - Top Edge
   - Down Edge
   - +1
+  - Bottom Edge
   layers:
   - Default
   - TransparentFX

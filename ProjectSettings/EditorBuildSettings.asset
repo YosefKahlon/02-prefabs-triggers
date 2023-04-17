@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/b-instantiate.unity
+    guid: 283c3eae5cb0dc043a830421def79761
+  - enabled: 1
+    path: Assets/Scenes/lvl2.unity
+    guid: cbadd9e85def40341ba17645b0bb6c82
   m_configObjects: {}
