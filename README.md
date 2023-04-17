@@ -4,7 +4,7 @@ Unity basics: prefabs, triggers, coroutines
 
 # Improvements
 
-## Round world
+## Round World
 
 This improvement was made to make the game world rounded. To achieve this, I added 4 Edge Collider 2D components to the sides of the world.
 
@@ -15,7 +15,7 @@ I gave each Edge Collider a unique tag. When the PlayerSpaceship Collider collid
 * [OnTriggerEnter2D(Collider2D other)]()
 
 
-## Add laser
+## Add Laser
 In this improvement, the PlayerSpaceship gains an additional laser for shooting. When the player collides with the +1 laser object, their laser count increases by 1.
 
 To implement this, I first made the +1 laser object spawn in a random position on the screen with the Coroutine method.
