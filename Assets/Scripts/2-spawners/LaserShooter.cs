@@ -10,7 +10,7 @@ public class LaserShooter : ClickSpawner
     private int laserCount = 0;
     float xPositionOffset = 0.5f;
     private float laserWidth = 1.0f; // Assuming that all lasers have the same width of 1.0 units
-
+   
     protected override GameObject spawnObject()
     {
 
@@ -27,8 +27,8 @@ public class LaserShooter : ClickSpawner
         }
         else
         {
-            GameObject containerObject = new GameObject("Laser Container");
-
+            //GameObject containerObject = new GameObject("Laser Container");
+            GameObject containerObject = new GameObject();
 
             for (int i = 0; i < laserCount; i++)
             {
@@ -39,7 +39,7 @@ public class LaserShooter : ClickSpawner
                     newObjectScoreAdder.SetScoreField(scoreField);
                 // Offset the position of the new objects so they appear side by side
 
-                if (laserCount == 1)
+                if (laserCount == 1 )
                 {
                     newObject1.transform.position += new Vector3(xPositionOffset, 0, 0);
                 }
@@ -47,8 +47,13 @@ public class LaserShooter : ClickSpawner
                 {
                     // Offset the position of the new objects so they appear side by side
                     // The x position of the new laser is calculated based on the current laser count and its width
-                    float xPos = (i - (laserCount - 1) / 2.0f) * laserWidth;
-                    newObject1.transform.position += new Vector3(xPos, 0, 0);
+                    
+                    
+                        float xPos = (i - (laserCount - 1) / 2.0f) * laserWidth;
+                        newObject1.transform.position += new Vector3(xPos + xPositionOffset/laserCount * i, 0, 0);
+                    
+                   
+                    
                 }
 
 
@@ -61,10 +66,12 @@ public class LaserShooter : ClickSpawner
     public void AddLaser()
     {
         laserCount++;
+     
         Debug.Log("Laser Count: " + laserCount);
 
-
     }
+
+    //
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "+1")
