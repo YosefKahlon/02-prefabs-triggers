@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -8705231023242429918}
   - component: {fileID: 1766153018900690100}
   m_Layer: 0
-  m_Name: EnemySaucer
+  m_Name: EnemySaucer - Copy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
