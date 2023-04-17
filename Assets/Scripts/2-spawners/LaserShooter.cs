@@ -27,8 +27,8 @@ public class LaserShooter : ClickSpawner
         }
         else
         {
-            //GameObject containerObject = new GameObject("Laser Container");
-            GameObject containerObject = new GameObject();
+            GameObject containerObject = new GameObject("Laser Container");
+          
 
             for (int i = 0; i < laserCount; i++)
             {
@@ -37,8 +37,7 @@ public class LaserShooter : ClickSpawner
                 ScoreAdder newObjectScoreAdder = newObject1.GetComponent<ScoreAdder>();
                 if (newObjectScoreAdder)
                     newObjectScoreAdder.SetScoreField(scoreField);
-                // Offset the position of the new objects so they appear side by side
-
+               
                 if (laserCount == 1 )
                 {
                     newObject1.transform.position += new Vector3(xPositionOffset, 0, 0);
@@ -48,7 +47,7 @@ public class LaserShooter : ClickSpawner
                     // Offset the position of the new objects so they appear side by side
                     // The x position of the new laser is calculated based on the current laser count and its width
                     
-                    
+           
                         float xPos = (i - (laserCount - 1) / 2.0f) * laserWidth;
                         newObject1.transform.position += new Vector3(xPos + xPositionOffset/laserCount * i, 0, 0);
                     
