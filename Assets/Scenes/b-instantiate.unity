@@ -979,27 +979,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a564544a66d450d438e36e6d2712519d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnAction:
-    m_Name: Spawn
-    m_Type: 1
-    m_ExpectedControlType: 
-    m_Id: 4ae181c6-0345-4e30-bdc2-0ce1c53e1ae8
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: d2eebb6c-d139-4e09-aac1-5040603e1877
-      m_Path: <Keyboard>/space
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Spawn
-      m_Flags: 0
-    m_Flags: 0
-  prefabToSpawn: {fileID: 206225842732292031, guid: 1064f1e6fd4430a48ae8a63513c527b4,
-    type: 3}
-  velocityOfSpawnedObject: {x: 0, y: 20, z: 0}
-  scoreField: {fileID: 1640794454}
 --- !u!1 &1137432079
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,6 +1044,7 @@ GameObject:
   - component: {fileID: 1304819634}
   - component: {fileID: 1304819633}
   - component: {fileID: 1304819632}
+  - component: {fileID: 1304819635}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1107,7 +1087,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.589296
+  orthographic size: 9.295195
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1138,6 +1118,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1304819635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304819631}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c651ca50e0e15b448ad51495dc43f428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1380879936 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 426303147266665323, guid: 9235d1fa400722b40a026c222b71df3e,
@@ -1189,12 +1181,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02adf7eb9270ed645bbda5f617ec2e88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToSpawn: {fileID: 8477092487007756660, guid: 4a97d8cadc594d747aac631be5cc4bc6,
-    type: 3}
-  velocityOfSpawnedObject: {x: 0, y: 0, z: 0}
-  minTimeBetweenSpawns: 1
-  maxTimeBetweenSpawns: 3
-  maxXDistance: 0.5
 --- !u!1 &1437769369
 GameObject:
   m_ObjectHideFlags: 0
@@ -1272,8 +1258,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1437769369}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7181, y: -0.6792, z: 0}
-  m_LocalScale: {x: 4.4820986, y: 2.4612818, z: 2.4148364}
+  m_LocalPosition: {x: -0.57, y: -0.2858, z: 0}
+  m_LocalScale: {x: 4.5112324, y: 2.782725, z: 2.4148364}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
