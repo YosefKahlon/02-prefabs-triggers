@@ -3,7 +3,8 @@ Unity basics: prefabs, triggers, coroutines
 
 This project represents a Unity game of a spaceship shooting at enemies.
 
-
+# Play this game
+https://kinwon.itch.io/space-war
 
 
 
